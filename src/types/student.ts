@@ -17,3 +17,9 @@ export type StudentType = {
   name: string;
   phone: string;
 };
+
+export type FieldConfigType = {
+  [key: string]:
+    | string
+    | {label: string; fields: {[K in keyof AddressType]: string}};
+};

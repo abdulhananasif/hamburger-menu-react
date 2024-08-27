@@ -1,6 +1,5 @@
-import {IconButton, Modal} from '@mui/material';
+import {Modal} from '@mui/material';
 import {ReactElement} from 'react';
-import CancelIcon from '@mui/icons-material/Cancel';
 
 interface CustomModalProps {
   children: ReactElement;

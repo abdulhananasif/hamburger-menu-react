@@ -6,7 +6,6 @@ import Students from './components/Students';
 
 const App = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-
   return (
     <>
       <div

@@ -1,28 +1,5 @@
 import {StudentType, AddressType} from '../../../types/student';
-import {isStudentType} from '../../../utils/student';
-
-type FieldConfig = {
-  [key: string]:
-    | string
-    | {label: string; fields: {[K in keyof AddressType]: string}};
-};
-
-const FIELD_CONFIG: FieldConfig = {
-  email: 'Email',
-  phone: 'Phone',
-  age: 'Age',
-  gpa: 'GPA',
-  gender: 'Gender',
-  address: {
-    label: 'Address',
-    fields: {
-      street: 'Street',
-      city: 'City',
-      country: 'Country',
-      zip: 'ZIP',
-    },
-  },
-};
+import {FIELD_CONFIG, isStudentType} from '../../../utils/student';
 
 interface StudentDetailsProps {
   student: StudentType | {};
